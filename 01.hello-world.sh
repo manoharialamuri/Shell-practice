@@ -2,5 +2,7 @@
 
 echo "Hello World!"
 
-echo"Hi, I am Learning Shell script"
+echo "Hi, I am Learning Shell script"
+
+
 
