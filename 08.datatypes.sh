@@ -10,4 +10,9 @@ FRUITS=("APPLE" "BANANA" "GRAPES")
 
 echo "FRUITS ARE : ${FRUITS[@]}"
 
+echo "FRUITS IS : ${FRUITS[0]}"
+echo "SECOND FRUIT IS : ${FRUITS[1]}"
+echo "THIRD FRUIT IS : ${FRUITS[2]}"
+
+
 
