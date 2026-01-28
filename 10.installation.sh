@@ -5,3 +5,7 @@ USERID=$(id -u)
 if [ $USERID -ne 0 ]; then
     echo "Please use root access"
 fi
+
+echo "installing nginx"
+dnf install nginx -y
+
