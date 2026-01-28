@@ -1,7 +1,7 @@
 #!/bin/bash
 
 NUM1=100
-NUM2=200manu
+NUM2=manu
 
 SUM=$((NUM1+NUM2))
 
