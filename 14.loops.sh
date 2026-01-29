@@ -20,7 +20,7 @@ validate (){
     fi
 }
 
-for package $@
+for package in $@
 do
     echo "dnf install $package -y"
     validate "Installing $package"
