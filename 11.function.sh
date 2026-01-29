@@ -19,7 +19,7 @@ validate (){
 dnf install nginx -y
 validate $? "Installing nginx"
 
-dnf install mysql -y
+dnf install mysqql -y
 validate $? "Installing mysql"
 
 dnf install nodejs -y
