@@ -23,5 +23,5 @@ validate (){
 for package in $@
 do
     echo "dnf install $package -y"
-    validate "Installing $package"
+    validate $? "Installing $package"
 done
