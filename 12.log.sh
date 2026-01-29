@@ -7,7 +7,7 @@ LOGS_FILE="/var/log/shell-script/$0.log"
 
 
 if [ $USERID -ne 0 ]; then
-    echo "Please use root access"
+    echo "Please use root access" | tee -a $LOGS_FILE
     exit 12
 fi
 
@@ -21,10 +21,10 @@ validate (){
 }
 
 dnf install nginx -y &>> $LOGS_FILE
-validate $? "Installing nginx"
+validate $? "Installing nginx" | tee -a $LOGS_FILE
 
 dnf install mysql -y &>> $LOGS_FILE
-validate $? "Installing mysql"
+validate $? "Installing mysql" | tee -a $LOGS_FILE
 
 dnf install nodejs -y &>> $LOGS_FILE
-validate $? "Installing nodejs"
+validate $? "Installing nodejs" | tee -a $LOGS_FILE
