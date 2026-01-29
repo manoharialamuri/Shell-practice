@@ -13,15 +13,15 @@ fi
 
 validate (){
     if [ $1 -ne 0 ]; then
-        echo "$2... Failed"
+        echo "$2... Failed" | tee -a $LOGS_FILE
         exit 30
     else
-        echo "$2.. Success"
+        echo "$2.. Success" | tee -a $LOGS_FILE
     fi
 }
 
 for package in $@
 do
     echo "dnf install $package -y" &>> $0 $LOGS_FILE
-    validate $? "Installing $package" | tee -a $LOGS_FILE
+    validate $? "Installing $package" 
 done
