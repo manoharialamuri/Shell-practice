@@ -32,5 +32,5 @@ if [ $? -ne 0 ];then
     echo "Installing nodejs ...Failed"
     exit 3
 else
-    echo"Installing nodeja....Success"
+    echo "Installing nodejs....Success"
 fi
