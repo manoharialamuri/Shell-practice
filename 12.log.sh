@@ -11,7 +11,7 @@ if [ $USERID -ne 0 ]; then
     exit 12
 fi
 
-validate (){
+validate(){
     if [ $1 -ne 0 ]; then
         echo "$2... Failed"
         exit 30
