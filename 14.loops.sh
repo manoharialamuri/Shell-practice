@@ -25,3 +25,4 @@ do
     dnf install $package -y &>> $LOGS_FILE
     validate $? "$package Installation"
 done
+
