@@ -20,7 +20,7 @@ validate(){
     fi
 }
 
-for package in ($@)
+for package in $@
 do
     echo "dnf install $package -y" &>> $LOGS_FILE
     validate $? "$package Installation"
